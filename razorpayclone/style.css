@@ -1,0 +1,939 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7f9fc;
+    color:#222;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+nav{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#ffffff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h2{
+    color:#2563eb;
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 18px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#222;
+    font-size:16px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#2563eb;
+}
+
+.buttons button{
+    padding:10px 22px;
+    border:none;
+    cursor:pointer;
+    font-size:15px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.login{
+    background:white;
+    color:#2563eb;
+    border:2px solid #2563eb !important;
+}
+
+.signup{
+    background:#2563eb;
+    color:white;
+    margin-left:10px;
+}
+
+.signup:hover{
+    background:#0d4ed8;
+}
+
+.login:hover{
+    background:#2563eb;
+    color:white;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    width:100%;
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 8%;
+}
+
+.left{
+    width:50%;
+}
+
+.left h1{
+    font-size:55px;
+    line-height:70px;
+    margin-bottom:25px;
+}
+
+.left p{
+    font-size:18px;
+    color:#666;
+    line-height:32px;
+    margin-bottom:30px;
+}
+
+.left button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+.left button:hover{
+    background:#0d4ed8;
+    transform:translateY(-4px);
+}
+
+.right{
+    width:45%;
+    text-align:center;
+}
+
+.right img{
+    width:100%;
+    max-width:500px;
+}
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.features{
+    padding:80px 8%;
+    background:white;
+}
+
+.features h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:35px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.card p{
+    color:#666;
+}
+
+/* ===========================
+   SERVICES
+=========================== */
+
+.services{
+    padding:90px 8%;
+    background:#eef4ff;
+}
+
+.services h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.box{
+    background:white;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.box:hover{
+    transform:translateY(-10px);
+}
+
+.box h3{
+    margin-bottom:15px;
+    color:#2563eb;
+}
+
+.box p{
+    color:#666;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#111827;
+    color:white;
+    padding:40px;
+    text-align:center;
+}
+
+footer h2{
+    margin-bottom:10px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.left{
+    width:100%;
+}
+
+.right{
+    width:100%;
+    margin-top:40px;
+}
+
+.cards,
+.service-container{
+    grid-template-columns:1fr;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin:20px 0;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.buttons{
+    margin-top:10px;
+}
+
+.left h1{
+    font-size:42px;
+    line-height:55px;
+}
+
+}
+/* =======================
+TRUSTED
+======================= */
+
+.trusted{
+
+padding:80px 8%;
+text-align:center;
+background:white;
+
+}
+
+.companies{
+
+display:flex;
+justify-content:space-around;
+margin-top:50px;
+flex-wrap:wrap;
+
+}
+
+.companies div{
+
+padding:20px 35px;
+font-size:24px;
+font-weight:bold;
+background:#f4f4f4;
+border-radius:10px;
+margin:10px;
+transition:.3s;
+
+}
+
+.companies div:hover{
+
+background:#2563eb;
+color:white;
+
+}
+
+/* =======================
+STATS
+======================= */
+
+.stats{
+
+padding:80px 8%;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+text-align:center;
+background:#2563eb;
+color:white;
+
+}
+
+.stat h2{
+
+font-size:45px;
+
+}
+
+.stat p{
+
+margin-top:10px;
+
+}
+
+/* =======================
+PRICING
+======================= */
+
+.pricing{
+
+padding:90px 8%;
+background:#f8fbff;
+
+}
+
+.pricing h2{
+
+text-align:center;
+margin-bottom:60px;
+font-size:40px;
+
+}
+
+.price-container{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+.price-card{
+
+background:white;
+padding:40px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+.price-card h1{
+
+font-size:45px;
+margin:20px;
+
+}
+
+.price-card button{
+
+padding:12px 25px;
+background:#2563eb;
+border:none;
+color:white;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+.premium{
+
+transform:scale(1.05);
+border:3px solid #2563eb;
+
+}
+
+/* =======================
+TESTIMONIAL
+======================= */
+
+.testimonial{
+
+padding:100px 8%;
+text-align:center;
+
+}
+
+.testimonial-box{
+
+max-width:700px;
+margin:auto;
+padding:40px;
+background:white;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+.testimonial p{
+
+font-size:24px;
+margin-bottom:20px;
+
+}
+
+/* =======================
+FAQ
+======================= */
+
+.faq{
+
+padding:90px 8%;
+
+}
+
+.faq h2{
+
+text-align:center;
+margin-bottom:50px;
+
+}
+
+.accordion{
+
+width:100%;
+padding:18px;
+font-size:18px;
+cursor:pointer;
+border:none;
+background:#2563eb;
+color:white;
+margin-top:15px;
+text-align:left;
+
+}
+
+.panel{
+
+display:none;
+padding:20px;
+background:#eef4ff;
+
+}
+/* ==========================
+TOP BUTTON
+========================== */
+
+#topBtn{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#2563eb;
+
+color:white;
+
+font-size:22px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+transition:.3s;
+
+}
+
+#topBtn:hover{
+
+transform:scale(1.1);
+
+background:#0d47a1;
+
+}
+/* ==========================
+CONTACT
+========================== */
+
+.contact{
+
+padding:90px 8%;
+
+background:white;
+
+text-align:center;
+
+}
+
+.contact form{
+
+max-width:700px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.contact input,
+.contact textarea{
+
+padding:15px;
+
+margin:15px 0;
+
+border:1px solid #ddd;
+
+border-radius:8px;
+
+font-size:16px;
+
+}
+
+.contact textarea{
+
+height:150px;
+
+resize:none;
+
+}
+
+.contact button{
+
+padding:15px;
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+/* ==========================
+MENU BUTTON
+========================== */
+
+#menuBtn{
+
+display:none;
+
+font-size:35px;
+
+cursor:pointer;
+
+}
+
+/* ==========================
+DARK BUTTON
+========================== */
+
+#themeBtn{
+
+margin-left:10px;
+
+padding:10px;
+
+cursor:pointer;
+
+}
+
+/* ==========================
+DARK MODE
+========================== */
+
+.dark{
+
+background:#121212;
+
+color:white;
+
+}
+
+.dark section{
+
+background:#121212;
+
+color:white;
+
+}
+
+.dark nav{
+
+background:#1d1d1d;
+
+}
+
+.dark footer{
+
+background:black;
+
+}
+
+.dark .card,
+.dark .box,
+.dark .price-card,
+.dark .testimonial-box{
+
+background:#1d1d1d;
+
+color:white;
+
+}
+
+/* ==========================
+MOBILE
+========================== */
+
+@media(max-width:768px){
+
+nav{
+
+position:relative;
+
+}
+
+#menu{
+
+display:none;
+
+position:absolute;
+
+top:80px;
+
+left:0;
+
+width:100%;
+
+background:white;
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+#menu li{
+
+padding:20px;
+
+}
+
+#menuBtn{
+
+display:block;
+
+}
+
+.buttons{
+
+display:none;
+
+}
+
+}
+/* ==========================
+LOADER
+========================== */
+
+#loader{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100vh;
+
+background:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+z-index:99999;
+
+}
+
+.spinner{
+
+width:70px;
+
+height:70px;
+
+border:8px solid #ddd;
+
+border-top:8px solid #2563eb;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* ==========================
+PARTNERS
+========================== */
+
+.partners{
+
+padding:90px 0;
+
+background:white;
+
+overflow:hidden;
+
+text-align:center;
+
+}
+
+.slider{
+
+overflow:hidden;
+
+margin-top:40px;
+
+}
+
+.slide-track{
+
+display:flex;
+
+width:200%;
+
+animation:scroll 18s linear infinite;
+
+}
+
+.slide{
+
+width:220px;
+
+padding:30px;
+
+font-size:28px;
+
+font-weight:bold;
+
+}
+
+@keyframes scroll{
+
+0%{
+
+transform:translateX(0);
+
+}
+
+100%{
+
+transform:translateX(-50%);
+
+}
+
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+
+background:#111827;
+
+padding:50px;
+
+color:white;
+
+text-align:center;
+
+}
+
+.social{
+
+margin:20px 0;
+
+}
+
+.social i{
+
+font-size:28px;
+
+margin:15px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.social i:hover{
+
+color:#2563eb;
+
+transform:translateY(-8px);
+
+}
+
+/* ==========================
+GRADIENT HERO
+========================== */
+
+.hero{
+
+background:linear-gradient(
+
+135deg,
+
+#eef5ff,
+
+#ffffff,
+
+#dcecff
+
+);
+
+}
+
+/* ==========================
+FLOAT IMAGE
+========================== */
+
+.right img{
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
